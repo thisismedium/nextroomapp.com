@@ -6,3 +6,7 @@ docs/.build
 */local_settings.py
 */media/ext
 
+.DS_Store
+nextroomapp/.DS_Store
+nextroomapp/media/.DS_Store
+nextroomapp/media/js/.DS_Store
