@@ -179,6 +179,8 @@ input.button.disabled {
     left: 78px; top: 30px;
     width: 384px; }
     
+    a#sign-up { position:absolute; }
+    
     #signup table {
       margin-left: -20px; }
       
@@ -263,6 +265,8 @@ input.button.disabled {
   #info .why {
     width: 416px;
     margin-left: 55px; }
+    
+  a#why-nextroom { position:absolute; }
       
       #info .why h2 {
         margin-left: 25px; }
