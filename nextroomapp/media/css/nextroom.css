@@ -158,6 +158,7 @@ input.button.disabled {
       .radio-button {
         float:left;
         width: 12px; height: 12px;
+        line-height: 1px;
         margin-right: 6px;
         cursor: pointer;
         text-indent: -9999px;
@@ -306,8 +307,10 @@ input.button.disabled {
       height: 3px;
       background: url(../images/divider.png) no-repeat 0px 0px; }
       
-    .what img.wifi {
+    .what img.wifi, .what img.wifi-ie6 {
       margin: 0px 0px 27px 61px; }
+      
+    .what img.wifi-ie6 { display:none; }
       
     .what h5 {
       width:320px;
@@ -339,12 +342,12 @@ input.button.disabled {
     background: url(../images/plus-pattern-bottom.png) no-repeat; }
   
   
-  #ready { margin-left: 53px; }
+  #ready { margin-left: 53px; width: 233px; }
 
     #get-started-above {
       background-image: url(../images/btn-get-started-above.png); }
     
-  #email-signup { margin-left: 57px; }
+  #email-signup { margin-left: 57px; width: 280px; }
     
     #email-signup-form {
       padding-top: 4px; }
@@ -353,7 +356,7 @@ input.button.disabled {
         display: inline-block;
         margin-right: 5px; }
         
-  #contact { margin-left: 52px; }
+  #contact { margin-left: 52px; width: 197px; }
   
     #contact a.logo {
       display: block;
@@ -371,6 +374,7 @@ input.button.disabled {
       text-indent:-99999px; }
     
     #footer #contact h3 {
+      width: 197px;
       margin-left: -2px; }
     
     #footer #ready h3 {
