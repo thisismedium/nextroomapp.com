@@ -212,7 +212,8 @@ input.button.disabled {
     #signup-success {
       display: none;
       position: absolute;
-      left: 0px; top: 110px; }
+      left: 0px; top: 110px;
+      width:325px; }
     
     div.required {
       position:absolute;

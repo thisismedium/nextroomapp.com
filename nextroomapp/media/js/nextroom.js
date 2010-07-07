@@ -34,7 +34,7 @@
       return true;
     },
     email_address: function( val ){
-      var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/gim;
+      var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+(?:\.[a-zA-Z]{2,})+$/i;
       if( pattern.test(val) )
         return true;
       else
@@ -48,7 +48,7 @@
   function validate_all(){
     $('form#signup input.text').each( validate );
     if( $('form#signup td:not(.checked)').length ){
-      show_message( 'Please check form for errors.' );
+      show_message('Please check form for errors.');
       return false;
     }
     else {
