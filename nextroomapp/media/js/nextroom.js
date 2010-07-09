@@ -150,7 +150,7 @@
   
   function play(){
     clearTimeout( slide_timer );
-    slide_timer = setInterval( next_slide, 3200 );
+    slide_timer = setInterval( next_slide, 6000 );
   }
   
   function magical_scrolling_anchors(){

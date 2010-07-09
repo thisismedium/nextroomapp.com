@@ -38,5 +38,5 @@ input.submit { background-image: url(../images/btn-submit-ie6.png); }
 .what img.wifi { display:none; }
 .what img.wifi-ie6 { display:block; }
 
-#ready, #contact { margin-left: 26px; }
+#contact { margin-left: 26px; }
 #email-signup { margin-left: 28px; }

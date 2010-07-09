@@ -17,6 +17,9 @@ body {
 p {
   margin-bottom: 0.5em; }
 
+a {
+  color: #666; }
+
 .button {
   display: block;
   width: 131px; height: 48px;
@@ -325,7 +328,7 @@ input.button.disabled {
 #footer {
   background:#f6f6f6;
   border-top:1px #fff solid;
-  height:228px; }
+  height:255px; }
 
   #footer .sections {
     position: relative;
@@ -338,7 +341,7 @@ input.button.disabled {
     
   #plus-pattern-bottom {
     position: absolute;
-    right: 9px; top: 119px;
+    right: 9px; top: 149px;
     width: 84px; height: 104px;
     background: url(../images/plus-pattern-bottom.png) no-repeat; }
   
@@ -348,16 +351,19 @@ input.button.disabled {
     #get-started-above {
       background-image: url(../images/btn-get-started-above.png); }
     
-  #email-signup { margin-left: 57px; width: 280px; }
+  #email-signup { margin-left: 57px; width: 305px; }
     
     #email-signup-form {
       padding-top: 4px; }
   
       #email-signup-form input {
-        display: inline-block;
+        float: left;
         margin-right: 5px; }
         
-  #contact { margin-left: 52px; width: 197px; }
+      #email-signup .button {
+        float: right; }
+        
+  #contact { margin-left: 52px; width: 240px; }
   
     #contact a.logo {
       display: block;
