@@ -1,7 +1,7 @@
 # Django settings for nextroomapp project.
 from os import path
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 APPEND_SLASH = True
@@ -24,12 +24,18 @@ DATABASE_PORT = ''             # Set to empty string for default. Not used with 
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/New_York'
   
-EMAIL_HOST = 'relay.smtp.coptix.com'
-EMAIL_PORT = 25
-EMAIL_USE_TLS = False
+# EMAIL_HOST = 'relay.smtp.coptix.com'
+# EMAIL_PORT = 25
+# EMAIL_USE_TLS = False
   
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'donotreply@nextroomapp.com'
+EMAIL_HOST_PASSWORD = 'nextroom123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
