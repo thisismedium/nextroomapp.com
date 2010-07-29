@@ -1,7 +1,7 @@
 # Django settings for nextroomapp project.
 from os import path
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 APPEND_SLASH = True
