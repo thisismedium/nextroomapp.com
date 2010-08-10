@@ -1,7 +1,7 @@
 # Django settings for nextroomapp project.
 from os import path
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 APPEND_SLASH = True
@@ -24,7 +24,17 @@ DATABASE_PORT = ''             # Set to empty string for default. Not used with 
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'America/New_York'
+  
+# EMAIL_HOST = 'relay.smtp.coptix.com'
+# EMAIL_PORT = 25
+# EMAIL_USE_TLS = False
+  
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'donotreply@nextroomapp.com'
+EMAIL_HOST_PASSWORD = 'nextroom123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -48,7 +58,7 @@ MEDIA_URL = ''
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = '/media/admin/'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '3pmu8uh+0j&5dwci5i3_3l!#5%3)(hat5ifcpz3-m03oxpltb%'
@@ -58,6 +68,11 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
 #     'django.template.loaders.eggs.load_template_source',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'pykk.auth.backends.HtpasswdBackend',
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 MIDDLEWARE_CLASSES = (
