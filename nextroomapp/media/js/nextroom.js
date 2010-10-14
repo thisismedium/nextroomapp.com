@@ -97,7 +97,7 @@
   ];
   
   function add_required(){
-    var wrap_off = $('#wrapper').offset().left;
+    var wrap_off = $('.wrapper').offset().left;
     
     for( var n=0; n < required.length; n++ ) (function(){
       var elem = $('#id_'+required[n].id),
@@ -162,6 +162,14 @@
       $(this).click( function( e ){
         e.preventDefault();
         $('html,body').animate({ scrollTop: target.offset().top });
+        if (hash == '#sign-up') {
+            setTimeout(function() {
+                $('#itunes_button_glow').fadeIn('slow');
+            }, 1000);
+            setTimeout(function() {
+                $('#itunes_button_glow').fadeOut('slow');
+            }, 6000);
+        };
       });
     });
   }
