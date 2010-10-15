@@ -56,6 +56,7 @@ input.text {
     width: 175px;
     border: none;
     line-height: 12px;
+    height:15px;
     padding: 9px 0px 6px 0px;
     text-indent: 12px;
     background: url(../images/fields.png) no-repeat 0px 0px;
