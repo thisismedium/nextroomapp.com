@@ -193,7 +193,7 @@
     
     $('form#signup').submit( function( e ){
       e.preventDefault();
-      $(this).find('input.text').forget();
+      //$(this).find('input.text').forget();
 
       if( validate_all() ){
         $.post(
