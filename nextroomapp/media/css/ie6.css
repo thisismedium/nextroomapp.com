@@ -1,12 +1,13 @@
-input.submit { background-image: url(../images/btn-submit-ie6.png); }
-#info-buttons #why-next-room { background-image: url(../images/btn-why-nextroom-ie6.png); }
-#step-2 { background-image: url(../images/devices-ie6.png); }
-#itunes  { background-image: url(../images/btn-app-store-ie6.png); }
-#get-started-above  { background-image: url(../images/btn-get-started-above-ie6.png); }
-#reasons li { background-image: url(../images/plus-bullet-ie6.png); }
+
+
+#iphone { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/iphone.png', sizingMethod='crop'); }
+
+#glare { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/glare.png', sizingMethod='crop'); }
 
 .what img.wifi { display:none; }
 .what img.wifi-ie6 { display:block; }
 
-#contact { margin-left: 26px; }
-#email-signup { margin-left: 28px; }
+#ready { margin-left: 30px; }
+#email-signup { margin-left: 50px; }
+#contact { margin-left: 34px; }
+#footer #contact h3 { margin-left:0; }
