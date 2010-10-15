@@ -97,14 +97,14 @@
   ];
   
   function add_required(){
-    var wrap_off = $('.wrapper').offset().left;
+    var wrap_off = $('#upper_content').offset().left;
     
     for( var n=0; n < required.length; n++ ) (function(){
       var elem = $('#id_'+required[n].id),
           off = elem.offset();
           
       var div = $('<div class="required">*</div>')
-        .appendTo('#wrapper')
+        .appendTo('#upper_content')
         .css({ left: off.left - wrap_off + required[n].x, top: off.top + 5 })
         .mousedown(function(e){ e.preventDefault(); elem[0].focus(); });
       
@@ -200,7 +200,9 @@
           '/sign_up/',
           $(this).serialize(),
           function( data, status ){
-            $('form#signup').fadeOut(160);
+            //$('form#signup').fadeOut(160);
+            $('#signup-success-overlay').show();
+            $('form#signup table td').removeClass();
             $('#signup-success').fadeIn(260);
   	      }
         );

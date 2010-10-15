@@ -77,12 +77,14 @@ input.button {
 
 input.disabled {
     opacity: 0.6;
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+    
 }
 
 input.button.disabled {
     cursor: default !important;
     background-position: 0px 0px !important;
-    margin: 0px !important;
 }
 
 .clear {
@@ -90,18 +92,24 @@ input.button.disabled {
     clear: both;
 }
 
-.success {
-    padding: 15px 20px;
-    line-height: 17px;
+#signup-success-overlay {
     color: #2385ad;
-    border: 1px #48a5cb solid;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    background: #b3e5f9;
+    background: #e7e7e7;
+    position:absolute;
+    top:60px;
+    left:-30px;
+    width: 420px;
+    height: 180px;
+    opacity: 0.6;
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+    display:none;
+}
+
+.success {
+    position: absolute;
+    top: 200px;
+    left: 230px;
 }
 
 .success a {
@@ -272,7 +280,7 @@ a#sign-up {
 }
 
 #signup td.checked {
-    background: url(../images/check.png) no-repeat 7px 7px;
+    background: url(../images/check.png) no-repeat 0px 7px;
 }
       
 #signup td.checked input.text {
@@ -298,7 +306,7 @@ a#sign-up {
     display: none;
     position: absolute;
     left: 2px;
-    top: 66px;
+    top: 43px;
     width: 366px;
     height: 18px;
     overflow: hidden;
@@ -308,15 +316,13 @@ a#sign-up {
 #signup-success {
     display: none;
     position: absolute;
-    left: 0px;
-    top: 110px;
-    width:325px;
+    color: #1b978c;
 }
 
 div.required {
     position:absolute;
-    font-size:18px;
-    color:#26aae0;
+    font-size:11px;
+    color:#0fb39f;
     z-index:3000;
 }
 
