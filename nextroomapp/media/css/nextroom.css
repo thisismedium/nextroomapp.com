@@ -161,7 +161,8 @@ input.button.disabled {
     top: 0px;
     width:173px;
     height: 101px;
-    background: url(../images/nextroom-logo-ie6.png) no-repeat;
+    background: url(../images/nextroom-logo.png) no-repeat;
+
     text-indent: -99999px;
 }
 
