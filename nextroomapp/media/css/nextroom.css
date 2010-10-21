@@ -407,6 +407,8 @@ div.required {
 
 a#why-nextroom {
     position:absolute;
+    top:5px;
+    left:0;
 }
 
 #info .why h2 {
