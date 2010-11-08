@@ -1,7 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>NextRoom</title>
+    <title>Easily manage rooms, patients, and staff in your practice | NextRoom</title>
+    <meta name="description" content="Utilize the iPhone or iPod Touch and the NextRoom service to manage physician and nurse queues, tasks, and notifications in a medical practice." /> 
+    <meta name="keywords" content="practice management, medical office efficiency, nextroom app, next room, room management, medical practice efficiency, medical app, medical application" /> 
+    
     <link href='/media/css/nextroom.css' rel='stylesheet' type='text/css' />
     <!--[if IE 6]>
     <link href='/media/css/ie6.css' rel='stylesheet' type='text/css' />
@@ -14,156 +17,160 @@
     <script src='/media/js/nextroom.js' type='text/javascript'></script>
   </head>
   <body>
-    <div id='wrapper'>
-      <div id='top'>
-        <h1>NextRoom</h1>
-        <h2>The flexibility of the medical flag system in an app.</h2>
-        <div id='info-buttons'>
-          <a class='button' href='#sign-up' id='get-started-below'>Get Started</a>
-          <a class='button' href='#why-nextroom' id='why-next-room'>Why NextRoom?</a>
-        </div>
-        <div id='slideshow'>
-          <div id='iphone'>
-            <ul id='slides'>
-              <li>
-                <img src='/media/images/screen-1.jpg' />
-              </li>
-              <li>
-                <img src='/media/images/screen-2.jpg' />
-              </li>
-              <li>
-                <img src='/media/images/screen-3.jpg' />
-              </li>
-              <li>
-                <img src='/media/images/screen-4.jpg' />
-              </li>
-            </ul>
-            <div id='glare'></div>
+      <div id="upper_content" class="wrapper">
+          <div id='top'>
+            <h1>NextRoom</h1>
+            <h2>The flexibility of the medical flag system in an app.</h2>
+            {% comment %}
+            <a class='button' href='/sign-in/' id='sign-in'>Sign In</a>
+            {% endcomment %}
+            <div id='info-buttons'>
+              <a class='button' href='#sign-up' id='get-started-below'>Get Started</a>
+              <a class='button' href='#why-nextroom' id='why-next-room'>Why NextRoom?</a>
+            </div>
+            <div id='slideshow'>
+              <div id='iphone'>
+                <ul id='slides'>
+                  <li>
+                    <img src='/media/images/screen-1.jpg' />
+                  </li>
+                  <li>
+                    <img src='/media/images/screen-2.jpg' />
+                  </li>
+                  <li>
+                    <img src='/media/images/screen-3.jpg' />
+                  </li>
+                  <li>
+                    <img src='/media/images/screen-4.jpg' />
+                  </li>
+                </ul>
+                <div id='glare'></div>
+              </div>
+              <ul id='radio-buttons'>
+                <li class='radio-button'>1</li>
+                <li class='radio-button'>2</li>
+                <li class='radio-button'>3</li>
+                <li class='radio-button'>4</li>
+              </ul>
+            </div>
           </div>
-          <ul id='radio-buttons'>
-            <li class='radio-button'>1</li>
-            <li class='radio-button'>2</li>
-            <li class='radio-button'>3</li>
-            <li class='radio-button'>4</li>
-          </ul>
-        </div>
-        <div id='plus-pattern-top'></div>
-      </div>
-      <div id='steps'>
-        <a id="sign-up">&nbsp;</a>
-        <div class='step' id='step-1'>
-          <h3>Sign Up for NextRoom Service</h3>
-          <form id='signup' action="/" method="POST">
-            <table>
-              <tr>
-                <td>
-                  {{ form.first_name }}
-                </td>
-                <td>
-                  {{ form.last_name }}
-                </td>
-              </tr>
-              <tr>
-                <td colspan='2'>
-                  {{ form.company }}
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  {{ form.email_address }}
-                </td>
-                <td>
-                  {{ form.phone }}
-                </td>
-              </tr>
-            </table>
-            <input class='submit button' type='submit' value='' />
-          </form>
-          <div id="error-message">Error.</div>
-          <div id="signup-success" class="success">
-            Thanks for your interest in NextRoom. Someone will be<br />in touch soon.
+          <div id='steps'>
+            <a id="sign-up">&nbsp;</a>
+            <div class='step' id='step-1'>
+              <h3>Sign Up for NextRoom Service</h3>
+              <form id='signup' action="/" method="POST">
+                <table>
+                  <tr>
+                    <td>
+                      {{ form.first_name }}
+                    </td>
+                    <td>
+                      {{ form.last_name }}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan='2'>
+                      {{ form.company }}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      {{ form.email_address }}
+                    </td>
+                    <td>
+                      {{ form.phone }}
+                    </td>
+                  </tr>
+                </table>
+                <input class='submit button' type='submit' value='' />
+              </form>
+              <div id="error-message">Error.</div>
+              <div id="signup-success-overlay"></div>
+              <div id="signup-success" class="success">
+                Thank You!
+              </div>
+            </div>
+            <div class='step' id='step-2'>
+              <h3>
+                <a href="http://appsto.re/nextroom">Download NextRoom for Free</a>
+              </h3>
+
+              <p>Download NextRoom from iTunes on the iPhone or iPod
+              Touch.  Once the download is complete, enter the account
+              details supplied during the setup process.</p>
+
+              <a class='button' href='http://appsto.re/nextroom' id='itunes'>Availabe on the iPhone App Store</a>
+              <div id="itunes_button_glow"></div>
+            </div>
           </div>
-        </div>
-        <div class='step' id='step-2'>
-          <h3>
-            <a href="http://appsto.re/nextroom">Download NextRoom for Free</a>
-          </h3>
-
-          <p>Download NextRoom from iTunes on the iPhone or iPod
-          Touch.  Once the download is complete, enter the account
-          details supplied during the setup process.</p>
-
-          <a class='button' href='http://appsto.re/nextroom' id='itunes'>Availabe on the iPhone App Store</a>
-        </div>
       </div>
       <div id='info'>
-        <div class='why section'>
-          <a id="why-nextroom">&nbsp;</a>
-          <h2>Why NextRoom App?</h2>
-          <ul id='reasons'>
-            <li class='reason'>
-              <h4>You can begin using NextRoom almost immediately.</h4>
-              <p>Once your account is activated and set up, NextRoom
-              requires minimal staff training to use.</p>
-            </li>
-            <li class='reason'>
-              <h4>Manage your patient queue.</h4>
-              <p>Instantly see how many patients are waiting to be
-              seen and in what order.</p>
-            </li>
-            <li class='reason'>
-              <h4>Reclaim your freedom.</h4>
-              <p>Instant alerts when a patient is added to your queue.</p>
-            </li>
-            <li class='reason'>
-              <h4>Transfers rooms between staff.</h4>
-              <p>NextRoom helps you quickly add rooms to a physician
-              and a nurse queue with notes and procedures.</p>
-            </li>
-            <li class='reason'>
-              <h4>Quickly find other doctors and nurses, anywhere.</h4>
-              <p>The occupied screen will easily show the location of
-              staff when checked into a room.</p>
-            </li>
-            <li class='reason'>
-              <h4>Half-mast the flag system and embrace efficiency.</h4>
-              <p>The medical flag system is outdated.  We've taken
-              the flexibility of the flags and created a service that
-              actually helps you run your practice.</p>
-            </li>
-            <li class='reason'>
-              <h4>Nothing is left to interpretation.</h4>
-              <p>Trade real information and notes without having to
-              memorize flag color combinations.</p>
-            </li>
-            <li class='reason'>
-              <h4>One plan, one price.</h4>
-              <p>Once your NextRoom service is activated, add as many
-              users to your account as needed with no additional
-              cost.</p>
-            </li>
-          </ul>
-        </div>
-        <div class='what section'>
-          <h2>What Users Say</h2>
-          <h4>Doctors say:</h4>
-          <p>"NextRoom has cut the nurse response time to patient
-          rooms from minutes to seconds, greatly enhancing the patient
-          experience."</p>
-          <h4>Nurses say:</h4>
-          <p>"NextRoom allows me to find the doctors no matter where
-          they are in the building.  Before NextRoom I had to ask
-          other nurses or look for clues."</p>
-          <hr />
-          <img class='wifi' src='/media/images/wifi.png' />
-          <img class='wifi-ie6' src='/media/images/wifi-ie6.png' />
-          <h5>No IT to manage and no on-site equipment.</h5>
-          <p>All you need is a Wi-Fi internet connection and a
-            NextRoom account.</p>
+        <div class="wrapper">
+            <div class='why section'>
+              <a id="why-nextroom">&nbsp;</a>
+              <h2>Why NextRoom App?</h2>
+              <ul id='reasons'>
+                <li class='reason'>
+                    <h4>Your practice, your way.</h4>
+                    <p>Customize NextRoom for your practice's unique needs.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Begin using NextRoom almost immediately.</h4>
+                    <p>NextRoom requires minimal setup and staff training to use.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Assign rooms to staff.</h4>
+                    <p>Quickly assign rooms to a physician or nurse with notes and tasks.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Manage your patient queue.</h4>
+                    <p>Instantly see how many rooms are waiting to be seen and in what order.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Receive alerts as new patients are added.</h4>
+                    <p>Audible alerts inform staff when a room is added to their queue.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Easily determine the location of staff.</h4>
+                    <p>The Occupied tab shows what rooms are accepted by staff.</p>
+                </li>
+                <li class='reason'>
+                    <h4>Eliminate centralized whiteboards and confusing flags.</h4>
+                    <p>NextRoom allows you to view, assign, and manage rooms on the go.</p> 
+                </li>
+                <li class='reason'>
+                    <h4>Embrace mobile technology and increase efficiency.</h4>
+                    <p>Use NextRoom alongside your favorite ePrescribing or EMR app. Now your patient data and workflow can be managed on the same device.</p>
+                </li>
+              </ul>
+            </div>
+            <div class='what section'>
+              <h2>What Users Say</h2>
+              <h4>Doctors say:</h4>
+              <p>"NextRoom has cut the nurse response time to patient
+              rooms from minutes to seconds, greatly enhancing the patient
+              experience."</p>
+              <h4>Nurses say:</h4>
+              <p>"NextRoom allows me to find the doctors no matter where
+              they are in the building.  Before NextRoom I had to ask
+              other nurses or look for clues."</p>
+
+              <div id="requirements_overview">
+              <h3>Requirements Overview</h3>
+              <ul>
+              	<li>WiFi Connection to the Internet</li>
+              	<li>iPod Touch or iPhone for each user</li>
+              	<li>NextRoom account activation</li>
+              	<li>Customize NextRoom for your practice</li>
+              </ul>
+              <h3>$250/Month (Unlimited Users)</h3>
+                  
+              </div>
+            </div>
+            
         </div>
         <div class='clear'></div>
       </div>
-    </div>
     <div id='footer'>
       <div class='sections'>
         <div class='section' id='ready'>
@@ -181,12 +188,10 @@
           <h3>Contact &amp; Support</h3>
           <!-- <a class='logo' href='#'>_</a> -->
           <p>
-            50 E. Main Street Chattanooga, TN 37408
-            <br />
-            423.380.8727 / <a href="mailto:support@nextroomapp.com">support@nextroomapp.com</a>
+             <a href="mailto:info@nextroomapp.com">info@nextroomapp.com</a> <br />
+             423.380.8727
           </p>
         </div>
-        <div id='plus-pattern-bottom'></div>
       </div>
     </div>
     

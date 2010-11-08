@@ -1,42 +1,13 @@
-.button { background-image: url(../images/btn-get-started-below-ie6.png); }
-input.submit { background-image: url(../images/btn-submit-ie6.png); }
-#info-buttons #why-next-room { background-image: url(../images/btn-why-nextroom-ie6.png); }
-#step-2 { background-image: url(../images/devices-ie6.png); }
-#itunes  { background-image: url(../images/btn-app-store-ie6.png); }
-#get-started-above  { background-image: url(../images/btn-get-started-above-ie6.png); }
-#reasons li { background-image: url(../images/plus-bullet-ie6.png); }
-
-
-#contact a.logo { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/medium-logo.png', sizingMethod='crop'); }
-
-#info .why h2 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/hd-why-nextroom-app.png', sizingMethod='crop'); }
-
-#info .what h2 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/hd-what-users-say.png', sizingMethod='crop'); }
+#top h1 { background: url(../images/nextroom-logo-ie6.png) no-repeat; }
 
 #iphone { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/iphone.png', sizingMethod='crop'); }
 
 #glare { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/glare.png', sizingMethod='crop'); }
-  
-#top h1 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/nextroom-logo.png', sizingMethod='crop'); }
-  
-#top h2 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/tagline.png', sizingMethod='crop'); }
-  
-#step-1 h3 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/step-1.png', sizingMethod='crop'); }
-
-#step-2 h3 a { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/step-2.png', sizingMethod='crop'); }
-
-#footer #contact h3 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/hd-contact-support.png', sizingMethod='scale'); }
-
-#footer #ready h3 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/hd-ready-for-nextroom.png', sizingMethod='crop'); }
-
-#footer #email-signup h3 { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/hd-sign-up-for-email-updates.png', sizingMethod='crop'); }
-
-#plus-pattern-bottom { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/plus-pattern-bottom.png', sizingMethod='crop'); }
-
-#plus-pattern-top { background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/plus-pattern-top.png', sizingMethod='crop'); }
 
 .what img.wifi { display:none; }
 .what img.wifi-ie6 { display:block; }
 
-#contact { margin-left: 26px; }
-#email-signup { margin-left: 28px; }
+#ready { margin-left: 30px; }
+#email-signup { margin-left: 50px; }
+#contact { margin-left: 34px; }
+#footer #contact h3 { margin-left:0; }
