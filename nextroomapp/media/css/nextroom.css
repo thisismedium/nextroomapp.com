@@ -354,11 +354,11 @@ div.required {
     width: 370px;
     height: 43px;
     text-indent: -9999px;
-    background: url(../images/step-1.png) no-repeat 0px 1px;
+    background: url(../images/step-1-new.png) no-repeat 0px 1px;
 }
 
 #step-2 h3 a {
-    background: url(../images/step-2.png) no-repeat 0px 0px;
+    background: url(../images/step-2-new.png) no-repeat 0px 0px;
 }
 
 #itunes {
@@ -430,7 +430,7 @@ h4 {
     letter-spacing: 0.1em;
     font-family: Verdana;
 }
-  
+
   
 #info .what {
     width: 354px;
@@ -448,6 +448,12 @@ h4 {
 #info .what p {
     margin-bottom:35px;
 }
+#info .what h4, 
+#reasons li h4 {
+    font-family: "Helvetica W02 Rounded Bd", helvetica, arial, sans-serif;
+    letter-spacing: 0;
+}
+  
 
 #info #requirements_overview {
     text-indent:-9999px;
