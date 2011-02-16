@@ -452,6 +452,8 @@ h4 {
 #reasons li h4 {
     font-family: "Helvetica W02 Rounded Bd", helvetica, arial, sans-serif;
     letter-spacing: 0;
+    font-size: 14px;
+    margin-bottom: 3px;
 }
   
 
